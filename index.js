@@ -1,6 +1,8 @@
 /* jshint node: true */
 'use strict';
 
-module.exports = {
+var BaseTheme = require('ui-base-theme');
+
+module.exports = BaseTheme.extend({
   name: 'ui-tomato-theme'
-};
+});
