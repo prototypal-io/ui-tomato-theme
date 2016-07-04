@@ -37,7 +37,8 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.1",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.1",
+    "ui-base-theme": "git://github.com/prototypal-io/ui-base-theme.git#ce77cee438890f86e92c3593e18243f19411d0ab"
   },
   "keywords": [
     "ember-addon"
