@@ -1,5 +1,5 @@
 {{#ui-field as |f|}}
-  <div class="form-name {{if wasFocused 'form-name--active'}}">
+  <div class="form-name {{if (or wasFocused f.states.focus) 'form-name--active'}}">
     <div class="form-name--label" {{action "focusIn"}}>
       Email Address
     </div>
