@@ -1,19 +1,15 @@
-{{#ui-field as |f|}}
-  <div class="form-name {{if (or wasFocused f.states.focus) 'form-name--active'}}">
+{{#ui-fieldset as |fs|}}
+  <div class="form-name {{if (or wasFocused fs.states.focus) 'form-name--active'}}">
     <div class="form-name--label" {{action "focusIn"}}>
       Phone Number
     </div>
     <div class="form-name--fields">
-      {{#f.label}}
-        Phone Number
-      {{/f.label}}
-      {{f.input value=phone}}
-    </div>
-    <div class="form-name--value"  {{action "focusIn"}}>
-      {{#f.label}}
-        Phone Number
-      {{/f.label}}
-      {{phone}}
+      {{#fs.field as |f|}}
+        {{#f.label}}
+          Phone Number
+        {{/f.label}}
+        {{f.input value=phone}}
+      {{/fs.field}}
     </div>
     <div class="form-name--tooltip">
       {{#ui-tooltip as |tooltip|}}
@@ -28,4 +24,4 @@
       {{/ui-tooltip}}
     </div>
   </div>
-{{/ui-field}}
+{{/ui-fieldset}}

@@ -1,13 +1,15 @@
-{{#ui-field as |f|}}
-  <div class="form-name {{if (or wasFocused f.states.focus) 'form-name--active'}}">
+{{#ui-fieldset as |fs|}}
+  <div class="form-name {{if (or wasFocused fs.states.focus) 'form-name--active'}}">
     <div class="form-name--label" {{action "focusIn"}}>
       Date of Birth
     </div>
     <div class="form-name--fields">
-      {{#f.label}}
-        Date of Birth
-      {{/f.label}}
-      {{f.input value=date}}
+      {{#fs.field as |f|}}
+        {{#f.label}}
+          Date of Birth
+        {{/f.label}}
+        {{f.input value=date}}
+      {{/fs.field}}
     </div>
   </div>
-{{/ui-field}}
+{{/ui-fieldset}}

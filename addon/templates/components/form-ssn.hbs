@@ -1,19 +1,15 @@
-{{#ui-field as |f|}}
+{{#ui-fieldset as |fs|}}
   <div class="form-name {{if (or wasFocused f.states.focus) 'form-name--active'}}">
     <div class="form-name--label" {{action "focusIn"}}>
       Social Security Number
     </div>
     <div class="form-name--fields">
-      {{#f.label}}
-        Social Security Number
-      {{/f.label}}
-      {{f.input value=ssn}}
-    </div>
-    <div class="form-name--value"  {{action "focusIn"}}>
-      {{#f.label}}
-        Social Security Number
-      {{/f.label}}
-      {{ssn}}
+      {{#fs.field as |f|}}
+        {{#f.label}}
+          Social Security Number
+        {{/f.label}}
+        {{f.input value=ssn}}
+      {{/fs.field}}
     </div>
     <div class="form-name--tooltip">
       {{#ui-tooltip as |tooltip|}}
@@ -28,4 +24,4 @@
       {{/ui-tooltip}}
     </div>
   </div>
-{{/ui-field}}
+{{/ui-fieldset}}
