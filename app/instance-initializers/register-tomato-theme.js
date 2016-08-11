@@ -3,6 +3,7 @@ export function initialize(appInstance) {
 
   themeService.register('ui-button', 'default', 'tomato');
   themeService.register('ui-input', 'default', 'tomato');
+  themeService.register('ui-field', 'default', 'tomato');
   //                    ^^ base     ^^ kind    ^^ theme
 }
 
