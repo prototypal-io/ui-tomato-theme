@@ -1,0 +1,16 @@
+@import "ui-base-theme/components/ui-input--default";
+
+@component {
+  @include ui-input--default(
+    $border-radius: 0px,
+    $color: $untitled-ui--input--default--color,
+    $border-color: transparent,
+    $background: transparent,
+    $disabled-color: $untitled-ui--input--default--disabled-color,
+    $disabled-background: $untitled-ui--input--default--disabled-background,
+    $error-color: $untitled-ui--input--default--error-color,
+    $focus-color: none,
+    $font: $untitled-ui--input--default--font,
+    $padding-x: 0
+  );
+}

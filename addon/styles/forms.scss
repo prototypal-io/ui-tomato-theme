@@ -3,9 +3,9 @@
   border: solid 1px #dce7f0;
   padding: 0 10px;
   border-radius: 3px;
-  transition: background 0.2s;
   width: 100%;
   box-sizing: border-box;
+  background: #ffffff;
 
   .form-name--label {
     position: absolute;
@@ -62,8 +62,6 @@
   }
 
   &--active {
-    background: #f6fbfe;
-
     .form-name--fields {
       opacity: 1;
       pointer-events: all;
