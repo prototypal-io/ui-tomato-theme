@@ -1,4 +1,4 @@
-.form-name {
+.compound-component {
   position: relative;
   border: solid 1px #dce7f0;
   padding: 0 10px;
@@ -8,7 +8,7 @@
   box-sizing: border-box;
   background: #ffffff;
 
-  .form-name--label {
+  .compound-component--label {
     position: absolute;
     top: 0px;
     width: 100%;
@@ -26,23 +26,23 @@
     }
   }
 
-  .form-name--fields {
+  .compound-component--fields {
     opacity: 0;
     pointer-events: none;
   }
 
-  .form-name--fields-flex {
+  .compound-component--fields-flex {
     display: flex;
   }
 
-  .form-name--value {
+  .compound-component--value {
     position: absolute;
     top: 0px;
     opacity: 0;
     pointer-events: none;
   }
 
-  .form-name--tooltip {
+  .compound-component--tooltip {
     position: absolute;
     top: 0px;
     right: 1em;
@@ -63,24 +63,24 @@
   }
 
   &--active {
-    .form-name--fields {
+    .compound-component--fields {
       opacity: 1;
       pointer-events: all;
     }
 
-    .form-name--label {
+    .compound-component--label {
       opacity: 0;
       pointer-events: none;
     }
   }
 
   &--show-value {
-    .form-name--label {
+    .compound-component--label {
       opacity: 0;
       pointer-events: none;
     }
 
-    .form-name--value {
+    .compound-component--value {
       opacity: 1;
       pointer-events: all;
     }

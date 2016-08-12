@@ -1,11 +1,11 @@
 {{#ui-fieldset as |fs|}}
-  <div class="form-name
-              {{if fs.states.focus 'form-name--active'}}
-              {{if (and hasValue (not fs.states.focus)) 'form-name--show-value'}}">
-    <div class="form-name--label" {{action "focusIn"}}>
+  <div class="compound-component
+              {{if fs.states.focus 'compound-component--active'}}
+              {{if (and hasValue (not fs.states.focus)) 'compound-component--show-value'}}">
+    <div class="compound-component--label" {{action "focusIn"}}>
       Home Address
     </div>
-    <div class="form-name--fields form-name--fields-flex">
+    <div class="compound-component--fields compound-component--fields-flex">
       {{#fs.field as |f|}}
         {{#f.label}}
           Home Address
@@ -41,7 +41,7 @@
         {{f.input type="email" value=state}}
       {{/fs.field}}
     </div>
-    <div class="form-name--value"  {{action "focusIn"}}>
+    <div class="compound-component--value"  {{action "focusIn"}}>
       {{#fs.field as |f|}}
         {{#f.label}}
           Home Address
@@ -50,10 +50,10 @@
         {{city}} {{state}} {{zip}}
       {{/fs.field}}
     </div>
-    <div class="form-name--tooltip">
+    <div class="compound-component--tooltip">
       {{#ui-tooltip as |tooltip|}}
         {{#tooltip.target}}
-          <div class="form-name--tooltip--target">
+          <div class="compound-component--tooltip--target">
             ?
           </div>
         {{/tooltip.target}}

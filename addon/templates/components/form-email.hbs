@@ -1,9 +1,9 @@
 {{#ui-fieldset as |fs|}}
-  <div class="form-name {{if (or wasFocused fs.states.focus) 'form-name--active'}}">
-    <div class="form-name--label" {{action "focusIn"}}>
+  <div class="compound-component {{if (or wasFocused fs.states.focus) 'compound-component--active'}}">
+    <div class="compound-component--label" {{action "focusIn"}}>
       Email Address
     </div>
-    <div class="form-name--fields">
+    <div class="compound-component--fields">
       {{#fs.field as |f|}}
         {{#f.label}}
           Email Address
@@ -11,10 +11,10 @@
         {{f.input type="email" value=email}}
       {{/fs.field}}
     </div>
-    <div class="form-name--tooltip">
+    <div class="compound-component--tooltip">
       {{#ui-tooltip as |tooltip|}}
         {{#tooltip.target}}
-          <div class="form-name--tooltip--target">
+          <div class="compound-component--tooltip--target">
             ?
           </div>
         {{/tooltip.target}}

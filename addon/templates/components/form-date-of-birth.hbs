@@ -1,9 +1,9 @@
 {{#ui-fieldset as |fs|}}
-  <div class="form-name {{if (or wasFocused fs.states.focus) 'form-name--active'}}">
-    <div class="form-name--label" {{action "focusIn"}}>
+  <div class="compound-component {{if (or wasFocused fs.states.focus) 'compound-component--active'}}">
+    <div class="compound-component--label" {{action "focusIn"}}>
       Date of Birth
     </div>
-    <div class="form-name--fields">
+    <div class="compound-component--fields">
       {{#fs.field as |f|}}
         {{#f.label}}
           Date of Birth
