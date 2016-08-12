@@ -4,12 +4,14 @@
       Date of Birth
     </div>
     <div class="compound-component--fields">
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          Date of Birth
-        {{/f.label}}
-        {{f.input value=date}}
-      {{/fs.field}}
+      <div class="compound-component--field">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            Date of Birth
+          {{/f.label}}
+          {{f.input value=date}}
+        {{/fs.field}}
+      </div>
     </div>
   </div>
 {{/ui-fieldset}}

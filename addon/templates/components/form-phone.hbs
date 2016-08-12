@@ -4,12 +4,14 @@
       Phone Number
     </div>
     <div class="compound-component--fields">
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          Phone Number
-        {{/f.label}}
-        {{f.input value=phone}}
-      {{/fs.field}}
+      <div class="compound-component--field">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            Phone Number
+          {{/f.label}}
+          {{f.input value=phone}}
+        {{/fs.field}}
+      </div>
     </div>
     <div class="compound-component--tooltip">
       {{#ui-tooltip as |tooltip|}}

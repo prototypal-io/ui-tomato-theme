@@ -6,40 +6,50 @@
       Home Address
     </div>
     <div class="compound-component--fields">
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          Home Address
-        {{/f.label}}
-        {{f.input type="email" value=street}}
-      {{/fs.field}}
+      <div class="compound-component--field compound-component--field--street">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            Home Address
+          {{/f.label}}
+          {{f.input type="email" value=street}}
+        {{/fs.field}}
+      </div>
 
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          Apt Site (Optional)
-        {{/f.label}}
-        {{f.input type="email" value=suite}}
-      {{/fs.field}}
+      <div class="compound-component--field compound-component--field--suite">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            Apt Site (Optional)
+          {{/f.label}}
+          {{f.input type="email" value=suite}}
+        {{/fs.field}}
+      </div>
 
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          Zip Code
-        {{/f.label}}
-        {{f.input type="email" value=zip}}
-      {{/fs.field}}
+      <div class="compound-component--field compound-component--field--zip-code">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            Zip Code
+          {{/f.label}}
+          {{f.input type="email" value=zip}}
+        {{/fs.field}}
+      </div>
 
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          City
-        {{/f.label}}
-        {{f.input type="email" value=city}}
-      {{/fs.field}}
+      <div class="compound-component--field compound-component--field--city">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            City
+          {{/f.label}}
+          {{f.input type="email" value=city}}
+        {{/fs.field}}
+      </div>
 
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          State
-        {{/f.label}}
-        {{f.input type="email" value=state}}
-      {{/fs.field}}
+      <div class="compound-component--field compound-component--field--state">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            State
+          {{/f.label}}
+          {{f.input type="email" value=state}}
+        {{/fs.field}}
+      </div>
     </div>
     <div class="compound-component--value"  {{action "focusIn"}}>
       {{#fs.field as |f|}}

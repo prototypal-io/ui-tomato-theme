@@ -4,12 +4,14 @@
       Social Security Number
     </div>
     <div class="compound-component--fields">
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          Social Security Number
-        {{/f.label}}
-        {{f.input value=ssn}}
-      {{/fs.field}}
+      <div class="compound-component--field">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            Social Security Number
+          {{/f.label}}
+          {{f.input value=ssn}}
+        {{/fs.field}}
+      </div>
     </div>
     <div class="compound-component--tooltip">
       {{#ui-tooltip as |tooltip|}}

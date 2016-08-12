@@ -4,12 +4,14 @@
       Total Annual Income
     </div>
     <div class="compound-component--fields">
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          Total Annual Income
-        {{/f.label}}
-        {{f.input value=income}}
-      {{/fs.field}}
+      <div class="compound-component--field">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            Total Annual Income
+          {{/f.label}}
+          {{f.input value=income}}
+        {{/fs.field}}
+      </div>
     </div>
     <div class="compound-component--tooltip">
       {{#ui-tooltip as |tooltip|}}
