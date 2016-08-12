@@ -1,6 +1,8 @@
+$border-color: #dce7f0;
+
 .compound-component {
   position: relative;
-  border: solid 1px #dce7f0;
+  border: solid 1px $border-color;
   padding: 0 10px;
   margin: 2px 0;
   border-radius: 3px;
@@ -8,7 +10,7 @@
   box-sizing: border-box;
   background: #ffffff;
 
-  .compound-component--label {
+  &--label {
     position: absolute;
     top: 0px;
     width: 100%;
@@ -26,23 +28,21 @@
     }
   }
 
-  .compound-component--fields {
+  &--fields {
     opacity: 0;
     pointer-events: none;
-  }
-
-  .compound-component--fields-flex {
     display: flex;
   }
 
-  .compound-component--value {
+  &--value {
     position: absolute;
-    top: 0px;
+    top: 0em;
     opacity: 0;
     pointer-events: none;
+    width: 100%;
   }
 
-  .compound-component--tooltip {
+  &--tooltip {
     position: absolute;
     top: 0px;
     right: 1em;
@@ -83,6 +83,28 @@
     .compound-component--value {
       opacity: 1;
       pointer-events: all;
+    }
+  }
+
+  &--field {
+    flex: 1;
+    padding-left: 10px;
+
+    &:first-child {
+      padding-left: 0px;
+    }
+
+    &--first-name {
+      flex: 3;
+      border-right: solid 1px $border-color;
+    }
+
+    &--middle-name {
+      border-right: solid 1px $border-color;
+    }
+
+    &--last-name {
+      flex: 3;
     }
   }
 }

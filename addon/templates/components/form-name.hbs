@@ -5,34 +5,42 @@
     <div class="compound-component--label" {{action "focusIn"}}>
       Full Name
     </div>
-    <div class="compound-component--fields compound-component--fields-flex">
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          First Name
-        {{/f.label}}
-        {{f.input value=firstName}}
-      {{/fs.field}}
+    <div class="compound-component--fields">
+      <div class="compound-component--field compound-component--field--first-name">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            First Name
+          {{/f.label}}
+          {{f.input value=firstName}}
+        {{/fs.field}}
+      </div>
 
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          MI
-        {{/f.label}}
-        {{f.input value=middleName}}
-      {{/fs.field}}
+      <div class="compound-component--field compound-component--field--middle-name">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            MI
+          {{/f.label}}
+          {{f.input value=middleName}}
+        {{/fs.field}}
+      </div>
 
-      {{#fs.field as |f|}}
-        {{#f.label}}
-          Last Name
-        {{/f.label}}
-        {{f.input value=lastName}}
-      {{/fs.field}}
+      <div class="compound-component--field compound-component--field--last-name">
+        {{#fs.field as |f|}}
+          {{#f.label}}
+            Last Name
+          {{/f.label}}
+          {{f.input value=lastName}}
+        {{/fs.field}}
+      </div>
     </div>
     <div class="compound-component--value"  {{action "focusIn"}}>
       {{#fs.field as |f|}}
         {{#f.label}}
           Full Name
         {{/f.label}}
-        {{firstName}} {{middleName}} {{lastName}}
+        {{f.input
+          value=(concat firstName (if middleName " ") middleName " " lastName)
+          disabled=true}}
       {{/fs.field}}
     </div>
   </div>
