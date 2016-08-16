@@ -1,7 +1,36 @@
+$yellow: #F9ECAB;
+
+$page-background: tomato;
+
 body {
   padding: 10px;
-  background: #f5f8f9;
+  background: $page-background;
   font-family: sans-serif;
 }
 
 @import 'ui-tomato-theme';
+
+.tomato {
+  @include ui-tomato-theme(
+    $page-background: $page-background,
+    $content-background: $yellow,
+
+    $default-color: #6a6a6a,
+    $error-color: #ff0000,
+    $focus-color: #0090ff,
+    $font-color: #867E7B,
+    $primary-color: tomato,
+
+    $border-radius: 0.5em,
+
+    $heading-font: ("Comic Sans MS", "Comic Sans", cursive),
+    $copy-font: ("Helvetica", "sans-serif"),
+    $component-font: ("Comic Sans MS", "Comic Sans", cursive),
+
+    $font-size--x-small: 0.6rem,
+    $font-size--small: 0.8rem,
+    $font-size--medium: 1rem,
+    $font-size--large: 1.3rem,
+    $font-size--x-large: 1.6rem
+  );
+}
