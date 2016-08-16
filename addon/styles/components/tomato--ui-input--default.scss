@@ -1,7 +1,7 @@
 @import "ui-base-theme/components/base--ui-input--default";
 
-@component {
-  @include base--ui-input--default(
+@component() {
+  @include base--ui-input--default($theme,
     $border-radius: 0px,
     $color: $untitled-ui--input--default--color,
     $border-color: transparent,
