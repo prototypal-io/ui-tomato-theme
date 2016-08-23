@@ -4,6 +4,9 @@ export function initialize(appInstance) {
   themeService.register('ui-button', 'default', 'tomato');
   themeService.register('ui-button', 'primary', 'tomato');
   themeService.register('ui-button', 'simple', 'tomato');
+  //                    ^^ base      ^^ kind   ^^ theme
+
+  themeService.register('ui-checkbox', 'default', 'tomato');
 
   themeService.register('ui-input', 'default', 'tomato');
   themeService.register('ui-field', 'default', 'tomato');
