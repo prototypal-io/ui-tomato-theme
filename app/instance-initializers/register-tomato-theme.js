@@ -12,6 +12,10 @@ export function initialize(appInstance) {
   themeService.register('ui-field', 'default', 'tomato');
   themeService.register('ui-tooltip', 'default', 'tomato');
   //                    ^^ base     ^^ kind    ^^ theme
+  themeService.register('ui-list', 'default', 'tomato');
+  themeService.register('ui-list---item', 'default', 'tomato');
+  themeService.register('ui-list', 'dropbutton', 'tomato');
+  themeService.register('ui-list---item', 'dropbutton', 'tomato');
 
   themeService.register('ui-panel', 'default', 'tomato');
   themeService.register('ui-panel---content', 'default', 'tomato');
