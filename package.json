@@ -48,8 +48,10 @@
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
     "ember-cli-htmlbars": "^1.0.3",
+    "ember-cli-velocity": "0.4.0",
     "field-kit": "^2.1.0",
-    "ui-base-theme": "prototypal-io/ui-base-theme"
+    "ui-base-theme": "prototypal-io/ui-base-theme",
+    "velocity-animate": "^1.2.3"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
