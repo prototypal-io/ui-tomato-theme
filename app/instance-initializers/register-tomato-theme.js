@@ -9,8 +9,6 @@ export function initialize(appInstance) {
   themeService.register('ui-checkbox', 'default', 'tomato');
 
   themeService.register('ui-field', 'default', 'tomato');
-  themeService.register('ui-tooltip', 'default', 'tomato');
-  //                    ^^ base     ^^ kind    ^^ theme
 
   themeService.register('ui-icon', 'default', 'tomato');
 
@@ -33,6 +31,8 @@ export function initialize(appInstance) {
   themeService.register('ui-tabs', 'default', 'tomato');
 
   themeService.register('ui-textarea', 'default', 'tomato');
+  themeService.register('ui-tooltip', 'default', 'tomato');
+  themeService.register('ui-tooltip---target', 'default', 'tomato');
 }
 
 export default {

@@ -1,0 +1,7 @@
+@import "ui-base-theme/components/base--ui-tooltip---target--default";
+
+@component() {
+  @include base--ui-tooltip---target--default($theme,
+    $border-width: 0
+  );
+}
