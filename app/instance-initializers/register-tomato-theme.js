@@ -17,6 +17,9 @@ export function initialize(appInstance) {
   themeService.register('ui-list', 'dropbutton', 'tomato');
   themeService.register('ui-list---item', 'dropbutton', 'tomato');
 
+
+  themeService.register('ui-popup', 'tooltip', 'tomato');
+  themeService.register('ui-popup', 'dropbutton', 'tomato');
   themeService.register('ui-panel', 'default', 'tomato');
   themeService.register('ui-panel---content', 'default', 'tomato');
   themeService.register('ui-panel---titlebar', 'default', 'tomato');
