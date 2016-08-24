@@ -25,6 +25,8 @@ export function initialize(appInstance) {
   themeService.register('ui-panel', 'default', 'tomato');
   themeService.register('ui-panel---content', 'default', 'tomato');
   themeService.register('ui-panel---titlebar', 'default', 'tomato');
+  themeService.register('ui-tabs', 'default', 'tomato');
+
   themeService.register('ui-textarea', 'default', 'tomato');
 }
 
