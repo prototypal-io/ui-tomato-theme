@@ -8,16 +8,21 @@ export function initialize(appInstance) {
 
   themeService.register('ui-checkbox', 'default', 'tomato');
 
-  themeService.register('ui-input', 'default', 'tomato');
   themeService.register('ui-field', 'default', 'tomato');
   themeService.register('ui-tooltip', 'default', 'tomato');
   //                    ^^ base     ^^ kind    ^^ theme
 
   themeService.register('ui-icon', 'default', 'tomato');
+
+  themeService.register('ui-input', 'default', 'tomato');
+
   themeService.register('ui-list', 'default', 'tomato');
   themeService.register('ui-list---item', 'default', 'tomato');
   themeService.register('ui-list', 'dropbutton', 'tomato');
   themeService.register('ui-list---item', 'dropbutton', 'tomato');
+
+  themeService.register('ui-message', 'default', 'tomato');
+  themeService.register('ui-message', 'input-error', 'tomato');
 
 
   themeService.register('ui-popup', 'tooltip', 'tomato');
