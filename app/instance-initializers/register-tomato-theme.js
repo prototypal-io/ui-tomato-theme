@@ -24,6 +24,8 @@ export function initialize(appInstance) {
   themeService.register('ui-message', 'default', 'tomato');
   themeService.register('ui-message', 'input-error', 'tomato');
 
+  themeService.register('ui-pagination', 'default', 'tomato');
+  themeService.register('ui-pagination---pages', 'default', 'tomato');
 
   themeService.register('ui-popup', 'tooltip', 'tomato');
   themeService.register('ui-popup', 'dropbutton', 'tomato');
