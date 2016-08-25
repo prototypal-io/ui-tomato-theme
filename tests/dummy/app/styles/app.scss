@@ -1,19 +1,17 @@
-$yellow: #F9ECAB;
-
-$page-background: tomato;
+$yellow: #FFFDE4;
 
 body {
   padding: 10px;
-  background: $page-background;
   font-family: sans-serif;
+  background: $yellow;
 }
 
 @import 'ui-tomato-theme';
 
 .tomato {
   @include ui-tomato-theme(
-    $page-background: $page-background,
-    $content-background: $yellow,
+    $page-background: tomato,
+    $content-background: #FFFFFF,
 
     $default-color: #6a6a6a,
     $error-color: #ff0000,
