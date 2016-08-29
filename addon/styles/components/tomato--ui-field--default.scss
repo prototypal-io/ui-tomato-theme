@@ -1,7 +1,7 @@
-@import "ui-base-theme/components/ui-field--default";
+@import "ui-base-theme/components/base--ui-field--default";
 
 @component {
-  @include ui-field--default(
+  @include base--ui-field--default(
     $margin: 0.5em 0 0 0
   );
 
