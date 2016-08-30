@@ -1,7 +1,7 @@
-@import "ui-base-theme/components/ui-button--default";
+@import "ui-base-theme/components/base--ui-button--default";
 
 @component {
-  @include ui-button--default(
+  @include base--ui-button--default(
     $background: tomato,
     $color: white
   );
