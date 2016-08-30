@@ -1,1 +1,1 @@
-export { default } from 'ui-base-theme/components/ui-message--default';
+export { default } from 'ui-base-theme/components/base--ui-message--default';

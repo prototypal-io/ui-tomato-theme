@@ -1,1 +1,1 @@
-export { default } from 'ui-base-theme/components/ui-panel---titlebar--default';
+export { default } from 'ui-base-theme/components/base--ui-panel---titlebar--default';

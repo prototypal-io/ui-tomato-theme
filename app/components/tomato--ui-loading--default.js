@@ -1,1 +1,1 @@
-export { default } from 'ui-base-theme/components/ui-loading--default';
+export { default } from 'ui-base-theme/components/base--ui-loading--default';

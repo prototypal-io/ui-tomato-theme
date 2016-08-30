@@ -1,1 +1,1 @@
-export { default } from 'ui-base-theme/components/ui-tabs--default';
+export { default } from 'ui-base-theme/components/base--ui-tabs--default';

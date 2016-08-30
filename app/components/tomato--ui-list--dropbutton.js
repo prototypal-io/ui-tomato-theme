@@ -1,1 +1,1 @@
-export { default } from 'ui-base-theme/components/ui-list--dropbutton';
+export { default } from 'ui-base-theme/components/base--ui-list--dropbutton';

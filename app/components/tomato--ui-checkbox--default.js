@@ -1,1 +1,1 @@
-export { default } from 'ui-base-theme/components/ui-checkbox--default';
+export { default } from 'ui-base-theme/components/base--ui-checkbox--default';
